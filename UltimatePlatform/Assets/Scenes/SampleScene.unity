@@ -253,6 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b6fbe5981906746b6c84340d74eae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   playerTraform: {fileID: 1185718311}
 --- !u!20 &519420031
 Camera:
@@ -1160,7 +1161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2142209681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d495d0f499569b44c9ff64fe2952738a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a25384d0fbf8c2469ebe0b971387609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 3015065728623942367, guid: 62d75a2d6ae306e4886fd743be5c0168, type: 3}

@@ -12,7 +12,7 @@ public class PlayerScript : MonoBehaviour
 
     private Animator animator;
     private Rigidbody2D rb2d;
-    private SpriteRenderer renderer;
+    private new SpriteRenderer renderer;
     private Vector2 movement;
     private bool activateJump;
     private bool isJumping;
@@ -89,10 +89,5 @@ public class PlayerScript : MonoBehaviour
         {
             animator.SetBool("isRunning", true);
         }
-    }
-
-    public void Lock()
-    {
-
     }
 }
