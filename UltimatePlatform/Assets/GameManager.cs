@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject playerPrefab;
     public PlayerScript player;
-    public GameObject creatore;
+    public Creatore creatore;
     public float respawnCD = 2;
     public bool playerDead = false;
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<PlayerScript>();
+        creatore = FindObjectOfType<Creatore>();
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
             respawnCD -= Time.deltaTime;
             if (respawnCD <= 0)
             {
-                Instantiate(playerPrefab, creatore.transform.position, Quaternion.identity);
+                creatore.Create();
                 respawnCD = 2;
                 playerDead = false;
             }
